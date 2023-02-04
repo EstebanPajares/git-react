@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import User from './user';
 
 function Header({children}){
   return (
@@ -21,6 +22,11 @@ return (
           </li>
         </ul>
       </Header>
+
+      <User
+      name = 'Jehu'
+      avatar = 'https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png'
+      />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello World</h1>
