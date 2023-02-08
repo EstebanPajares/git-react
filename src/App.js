@@ -24,8 +24,8 @@ return (
       </Header>
 
       <User
-      name = 'Jehu'
-      avatar = 'https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png'
+      name = 'Esteban'
+      avatar = 'https://www.elcolombiano.com/binrepository/580x872/0c10/580d365/none/11101/GBFJ/capitan-america_37326520_20210310181935.jpg'
       />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

@@ -1,11 +1,10 @@
 // Creamos la funcion
 function User({name, avatar}){
-
-    const newName = `${name} es muy divertido`
-    return(
-        <div className="user">
-            <img src={avatar} alt={newName} title={newName} />
-            <p>{`Su nombre es:  ${newName}`}</p>
+    const newName = `${name} es el Capitan América`
+    return (
+        <div className="User">
+            <img src={avatar} alt={name} title = {name} />
+            <p>{newName}</p>
         </div>
     )
 }
