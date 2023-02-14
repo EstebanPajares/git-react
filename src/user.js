@@ -7,15 +7,15 @@ import { useState } from "react"
 //Element.addEventListener('click', ()=>{})
 
 
-function User({name, avatar}){
+function User({name, avatar, counter}){
     const [calculatedName, setCalculatedName] = useState(name)
-    const [counter, setCounter] = useState(0)
+    /* const [counter, setCounter] = useState(0) */
 
     const newName = `${calculatedName}, quien será tu maestro de informática`
 
     function onClick(){
         setCalculatedName(`Capitan América`)
-        setCounter( counter + 1)
+        /* setCounter( counter + 1) */
         console.log(`hola ${name} Este es el resultado del evento Click`)
     }
 
