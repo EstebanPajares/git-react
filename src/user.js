@@ -1,5 +1,15 @@
 // Funcion para el estado
 import { useState } from "react"
+/* import style from './user.module.css'
+import './user.scss'
+ */
+import styled from "styled-components"
+
+const Avatar = styled.img `
+    border: 10px solid black;
+`
+
+
 
 // Creamos la funcion
 
@@ -7,7 +17,7 @@ import { useState } from "react"
 //Element.addEventListener('click', ()=>{})
 
 
-function User({name, avatar, counter}){
+function User({ color, name, avatar, counter}){
     const [calculatedName, setCalculatedName] = useState(name)
     /* const [counter, setCounter] = useState(0) */
 
@@ -21,8 +31,8 @@ function User({name, avatar, counter}){
 
     return (
         <div className="User" onClick={onClick}>
-            <img src={avatar} alt={name} title = {name} />
-            <p>Evento click by {newName} por {counter} veces</p>
+            <Avatar src={avatar} alt={name} title = {name} />
+            <p className='paragraph'>Evento click by {newName} por {counter} veces</p>
         </div>
     )
 }
