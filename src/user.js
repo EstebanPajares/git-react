@@ -3,13 +3,14 @@ import { useState } from "react"
 /* import style from './user.module.css'
 import './user.scss'
  */
+
+import Repo from "./components/repo"
 import styled from "styled-components"
 
 const Avatar = styled.img `
-    border: 10px solid black;
+    border: 10px solid red
+
 `
-
-
 
 // Creamos la funcion
 

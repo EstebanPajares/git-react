@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import User from './user';
 import { useState } from 'react';
+import Repo from "./components/repo"
 
 function Header({children}){
   return (
@@ -32,7 +33,9 @@ return (
           </li>
         </ul>
       </Header>
+      <Repo
 
+      />
       <User
       color = '#FF00AA'
       counter = {counter}
