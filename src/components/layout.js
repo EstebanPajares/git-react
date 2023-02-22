@@ -1,16 +1,16 @@
-import React, { Children } from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const LayoutStyled = styled.main`
 
 `
 
-function Layout( { children } ) {
-    return (
+function Layout ( { children } ){
+    return(
         <LayoutStyled>
-            {children}
+            { children }
         </LayoutStyled>
     )
 }
 
-export default Layout;
+export default Layout

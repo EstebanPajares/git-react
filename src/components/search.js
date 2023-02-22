@@ -1,18 +1,16 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const SearchStyled = styled.div`
 
 `
 
-function Search(){
-    return(
+function Search() {
+    return (
         <SearchStyled>
             Search
         </SearchStyled>
     )
 }
-
-
 
 export default Search
