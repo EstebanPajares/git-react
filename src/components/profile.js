@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const ProfileStyled = styled.div`
     grid-area: profile;
-    background-color: silver;
+    background: silver;
 `
 
 function Profile() {

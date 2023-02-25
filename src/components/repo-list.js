@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const RepoListStyled = styled.div`
     grid-area: repoList;
-    background-color: skyblue;
+    background: green;
 `
 
 function RepoList() {
