@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const LayoutStyled = styled.main`
-    min-block-size: 100vh;
+    /* min-block-size: 100vh;
     margin: auto;
     padding-inline: 1.25rem;
     max-inline-size: 75rem;
@@ -14,7 +14,7 @@ const LayoutStyled = styled.main`
         grid-template-columns: 17.37rem 1fr;
         grid-template-rows: auto 1fr;
         column-gap: 2rem;
-        grid-template-areas: "profile filters" "profile repoList";
+        grid-template-areas: "profile filters" "profile repoList"; */
     }
 
 `
