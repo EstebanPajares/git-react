@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import props from './profile-data';
 
 const ProfileStyled = styled.div`
     grid-area: profile;
@@ -45,26 +46,27 @@ const ProfileStyled = styled.div`
 `
 
 function Profile() {
+    const {name, login, avatar_url, bio, followers, following, location, twitter_username, blog} = props
     return (
         <ProfileStyled>
-            <img src="" className='avatar' alt="" width='278' height='278'/>
-            <p className="name">Esteban</p>
-            <p className="username">Esteban Pajares</p>
+            <img src={avatar_url} className='avatar' alt="" width='278' height='278'/>
+            <p className="name">{name}</p>
+            <p className="username">{login}</p>
             <div className="button">
                 <button>Follow</button>
                 <button>Soponsor</button>
             </div>
-            <p className="bio info">Software Engineer</p>
+            <p className="bio info">{bio}</p>
             <p className="followers info">
-                . 10 <span>followers</span> <span>.</span>15 <span>following</span>
+                . {followers} <span>followers</span> <span>.</span>{following} <span>following</span>
             </p>
-            <p className="stars info">
+           {/*  <p className="stars info">
                 . 81
-            </p>
-            <p className="location info">Lima</p>
+            </p> */}
+            <p className="location info">{location}</p>
 
-            <a className='info' href="https://github.com/EstebanPajares" target='_blank' rel="noreferrer">https://github.com/EstebanPajares</a>
-            <a className='info' href="https://twitter.com/Esteban_Pajares" target='_blank' rel="noreferrer">@EstebanPajares</a>
+            <a className='info' href={blog} target='_blank' rel="noreferrer">{blog}</a>
+            <a className='info' href={`https://twitter.com/${twitter_username}`} target='_blank' rel="noreferrer">@{twitter_username}</a>
         </ProfileStyled>
     )
 }
