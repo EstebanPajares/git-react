@@ -4,7 +4,13 @@ import props from './profile-data'
 import Button from './button'
 
 const ProfileStyled = styled.div`
+
+
     grid-area: profile;
+
+     .custtom{
+        border-color: green;
+    }
 
     .avatar{
         border-radius: 50%;
@@ -56,9 +62,14 @@ function Profile() {
             <div className="button">
                 <Button
                     text = 'Follow'
+                    link = '#'
+                    className= 'custtom'
                 />
                 <Button
                     text = 'Sponsor'
+                    icon = {<i>🥨</i>}
+
+
                 />
             </div>
             <p className="bio info">{bio}</p>
