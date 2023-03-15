@@ -24,7 +24,7 @@ export default {
   "location": 'Lima - Perú',
   "email": null,
   "hireable": null,
-  "bio": "🍔 Software Engineer",
+  "bio": "☕ Software Engineer",
   "twitter_username": 'EstebanPajares',
   "public_repos": 107,
   "public_gists": 273,

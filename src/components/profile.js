@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import props from './profile-data';
+import props from './profile-data'
+import Button from './button'
 
 const ProfileStyled = styled.div`
     grid-area: profile;
@@ -53,8 +54,12 @@ function Profile() {
             <p className="name">{name}</p>
             <p className="username">{login}</p>
             <div className="button">
-                <button>Follow</button>
-                <button>Soponsor</button>
+                <Button
+                    text = 'Follow'
+                />
+                <Button
+                    text = 'Sponsor'
+                />
             </div>
             <p className="bio info">{bio}</p>
             <p className="followers info">
