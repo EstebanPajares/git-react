@@ -19,7 +19,6 @@ const ButtonStyled = styled.button`
     padding-block: .25rem;
     font: var(--button);
 
-
     &:hover{
         background: var(--white);
         color: var(--buttonBG)
