@@ -77,7 +77,7 @@ function Profile() {
                 <Button
                     text = 'Sponsor'
                     icon = {<Icon
-                        name = 'heart'
+                        name = 'book'
                         /* sise={24}
                         color='blue' */
                     />}

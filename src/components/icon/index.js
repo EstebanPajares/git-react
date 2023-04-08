@@ -1,6 +1,7 @@
 
 import Heart from './heart'
 import Branch from './branch'
+import Book from './book'
 
 function Index( { name, ...props }) {
     switch (name){
@@ -9,6 +10,9 @@ function Index( { name, ...props }) {
         }
         case 'branch': {
             return <Branch {...props} />
+        }
+        case 'book': {
+            return <Book {...props} />
         }
         default:{
             return null
