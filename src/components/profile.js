@@ -4,7 +4,7 @@ import props from './profile-data'
 import Button from './button'
 import Icon from './icon'
 //import {ReactComponent as Heart} from './icon/heart.svg'
-import Heart from './icon/heart'
+//import Heart from './icon/heart'
 
 const ProfileStyled = styled.div`
 
@@ -59,7 +59,7 @@ function Profile() {
     const {name, login, avatar_url, bio, followers, following, location, twitter_username, blog} = props
     return (
         <ProfileStyled>
-            <Icon/>
+            <Icon />
             <img src={avatar_url} className='avatar' alt="" width='278' height='278'/>
             <p className="name">{name}</p>
             <p className="username">{login}</p>
@@ -77,7 +77,7 @@ function Profile() {
                 <Button
                     text = 'Sponsor'
                     icon = {<Icon
-                        name = 'book'
+                        name = 'heart'
                         /* sise={24}
                         color='blue' */
                     />}
