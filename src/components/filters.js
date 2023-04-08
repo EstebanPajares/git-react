@@ -16,6 +16,7 @@ function Filters() {
             <Icon name='cancel' />
             <Icon name='heart' />
             <Icon name='check' />
+            <Icon name='github' />
         </FiltersStyled>
     )
 }

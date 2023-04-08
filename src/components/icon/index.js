@@ -5,6 +5,7 @@ import Book from './book'
 import ArrowDown from './arrow-down'
 import Cancel from './cancel'
 import Check from './check'
+import Github from './github'
 
 function Index( { name, ...props }) {
     switch (name){
@@ -25,6 +26,9 @@ function Index( { name, ...props }) {
         }
         case 'check':{
             return <Check {...props}/>
+        }
+        case 'github':{
+            return <Github {...props}/>
         }
         default:{
             return null
