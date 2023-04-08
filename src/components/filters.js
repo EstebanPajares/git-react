@@ -17,6 +17,7 @@ function Filters() {
             <Icon name='heart' />
             <Icon name='check' />
             <Icon name='github' />
+            <Icon name='home' />
         </FiltersStyled>
     )
 }
