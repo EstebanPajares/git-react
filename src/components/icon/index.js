@@ -7,6 +7,7 @@ import Cancel from './cancel'
 import Check from './check'
 import Github from './github'
 import Home from './home'
+import Link from './link'
 function Index( { name, ...props }) {
     switch (name){
         case 'arrow-down':{
@@ -32,6 +33,9 @@ function Index( { name, ...props }) {
         }
         case 'home':{
             return <Home {...props}/>
+        }
+        case 'link':{
+            return <Link {...props}/>
         }
         default:{
             return null
