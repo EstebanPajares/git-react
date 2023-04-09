@@ -20,6 +20,7 @@ function Filters() {
             <Icon name='home' />
             <Icon name='link' />
             <Icon name='location' />
+            <Icon name= 'user' />
         </FiltersStyled>
     )
 }
