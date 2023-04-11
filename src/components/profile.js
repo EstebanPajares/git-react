@@ -11,10 +11,6 @@ const ProfileStyled = styled.div`
 
     grid-area: profile;
 
-     .custtom{
-        border-color: green;
-    }
-
     .avatar{
         border-radius: 50%;
         border: 1px solid var(--grey-1);
@@ -59,7 +55,6 @@ function Profile() {
     const {name, login, avatar_url, bio, followers, following, location, twitter_username, blog} = props
     return (
         <ProfileStyled>
-            <Icon />
             <img src={avatar_url} className='avatar' alt="" width='278' height='278'/>
             <p className="name">{name}</p>
             <p className="username">{login}</p>
@@ -67,19 +62,13 @@ function Profile() {
                 <Button
                     text = 'Follow'
                     link = '#'
-                    className= 'custtom'
-                    icon = {<Icon
-                        name = 'branch'
-                        /* sise={24}
-                        color='red' */
-                    />}
                 />
                 <Button
                     text = 'Sponsor'
                     icon = {<Icon
                         name = 'heart'
-                        /* sise={24}
-                        color='blue' */
+                        sise={24}
+                        color='var(--pink)'
                     />}
                 />
             </div>
