@@ -11,6 +11,7 @@ import Link from './link'
 import Location from './location'
 import User from './user'
 import Twitter from './twitter'
+import Star from './star'
 function Index( { name, ...props }) {
     switch (name){
         case 'arrow-down':{
@@ -48,6 +49,9 @@ function Index( { name, ...props }) {
         }
         case 'twitter':{
             return <Twitter {...props}/>
+        }
+        case 'star':{
+            return <Star {...props}/>
         }
         default:{
             return null
