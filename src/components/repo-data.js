@@ -220,7 +220,7 @@ export default[
     "node_id": "MDEwOlJlcG9zaXRvcnkzNg==",
     "name": "ambition",
     "full_name": "defunkt/ambition",
-    "private": false,
+    "private": true,
     "owner": {
       "login": "defunkt",
       "id": 2,
@@ -315,7 +315,9 @@ export default[
     "is_template": false,
     "web_commit_signoff_required": false,
     "topics": [
-
+      'html',
+      'CSS',
+      'JavaScript'
     ],
     "visibility": "public",
     "forks": 25,
