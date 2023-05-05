@@ -11,7 +11,7 @@ function RepoList({ repoList}) {
     return (
         <RepoListStyled>
             {repoList.map((item)=>{
-                return <RepoItem {...item}/>
+                return <RepoItem {...item} key={item.id}/>
             })}
         </RepoListStyled>
     )
